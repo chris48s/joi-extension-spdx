@@ -1,5 +1,7 @@
 # joi-extension-spdx
 
+[![Build](https://github.com/chris48s/joi-extension-spdx/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/chris48s/joi-extension-spdx/actions/workflows/build.yml)
+
 SPDX License IDs plugin for Joi
 
 ```js
