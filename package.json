@@ -1,0 +1,43 @@
+{
+  "name": "joi-extension-spdx",
+  "version": "0.1.0",
+  "description": "SPDX License IDs plugin for Joi",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha \"src/**/*.spec.js\"",
+    "lint": "eslint \"src/**/*.js\"",
+    "prettier": "prettier --write \"**/*.js\"",
+    "prettier:check": "prettier --check \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chris48s/joi-extension-spdx.git"
+  },
+  "author": "chris48s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chris48s/joi-extension-spdx/issues"
+  },
+  "homepage": "https://github.com/chris48s/joi-extension-spdx#readme",
+  "engines": {
+    "node": ">=12"
+  },
+  "peerDependencies": {
+    "joi": ">=17.2.0"
+  },
+  "dependencies": {
+    "spdx-license-ids": "^3.0.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "joi": "^17.2.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.1.2"
+  },
+  "files": [
+    "./src"
+  ]
+}
