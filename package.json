@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/chris48s/joi-extension-spdx#readme",
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "peerDependencies": {
     "joi": ">=17.2.0"
