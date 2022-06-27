@@ -5,8 +5,9 @@
 SPDX License IDs plugin for Joi
 
 ```js
-const { spdx } = require('joi-extension-spdx');
-const Joi = require('joi').extend(spdx);
+import { spdx } from 'joi-extension-spdx';
+import joi from "joi";
+const Joi = joi.extend(spdx);
 
 
 Joi.attempt('BSD-3-Clause', Joi.spdx().current());      // 'BSD-3-Clause'
