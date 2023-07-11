@@ -9,7 +9,7 @@ describe("joi-extension-spdx", function () {
     it("accepts valid identifiers", function () {
       assert.strictEqual(
         Joi.attempt("BSD-3-Clause", Joi.spdx()),
-        "BSD-3-Clause"
+        "BSD-3-Clause",
       );
       assert.strictEqual(Joi.attempt("AGPL-1.0", Joi.spdx()), "AGPL-1.0");
     });
@@ -26,7 +26,7 @@ describe("joi-extension-spdx", function () {
     it("accepts current identifiers", function () {
       assert.strictEqual(
         Joi.attempt("BSD-3-Clause", Joi.spdx().current()),
-        "BSD-3-Clause"
+        "BSD-3-Clause",
       );
     });
 
@@ -42,7 +42,7 @@ describe("joi-extension-spdx", function () {
     it("accepts deprecated identifiers", function () {
       assert.strictEqual(
         Joi.attempt("AGPL-1.0", Joi.spdx().deprecated()),
-        "AGPL-1.0"
+        "AGPL-1.0",
       );
     });
 
@@ -52,7 +52,7 @@ describe("joi-extension-spdx", function () {
         {
           name: "ValidationError",
           message: '"value" must be a deprecated SPDX identifier',
-        }
+        },
       );
     });
   });
