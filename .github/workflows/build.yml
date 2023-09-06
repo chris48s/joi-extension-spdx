@@ -9,7 +9,7 @@ jobs:
         node: ['14', '16', '18', '20']
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Node JS ${{ matrix.node }}
         uses: actions/setup-node@v3
