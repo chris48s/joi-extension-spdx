@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: ['14', '16', '18']
+        node: ['14', '16', '18', '20']
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -15,9 +15,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-
-      - name: Update NPM
-        run: npm install -g npm
 
       - name: Show Node/NPM versions
         run: |
