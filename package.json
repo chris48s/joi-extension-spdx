@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha \"src/**/*.spec.js\"",
     "lint": "eslint \"src/**/*.js\"",
-    "prettier": "prettier --write \"**/*.js\"",
-    "prettier:check": "prettier --check \"**/*.js\""
+    "prettier": "prettier --write \"**/*.{mjs,js}\"",
+    "prettier:check": "prettier --check \"**/*.{mjs,js}\""
   },
   "repository": {
     "type": "git",
