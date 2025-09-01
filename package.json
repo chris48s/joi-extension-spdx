@@ -29,7 +29,7 @@
     "spdx-license-ids": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "9.32.0",
+    "eslint": "9.34.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-mocha": "11.1.0",
     "eslint-plugin-prettier": "5.5.3",
