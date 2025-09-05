@@ -1,8 +1,8 @@
 "use strict";
 
-const Joi = require("joi");
-const ids = require("spdx-license-ids");
-const deprecatedIds = require("spdx-license-ids/deprecated");
+import Joi from "joi";
+import ids from "spdx-license-ids/index.json" with { type: "json" };
+import deprecatedIds from "spdx-license-ids/deprecated.json" with { type: "json" };
 
 const extensionName = "spdx";
 
@@ -45,4 +45,4 @@ const SpdxExtension = {
   },
 };
 
-module.exports = { spdx: SpdxExtension };
+export { SpdxExtension as spdx };

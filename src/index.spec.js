@@ -1,8 +1,10 @@
 "use strict";
 
-const assert = require("assert");
-const { spdx } = require(".");
-const Joi = require("joi").extend(spdx);
+import assert from "assert";
+import { spdx } from "./index.js";
+import joi from "joi";
+
+const Joi = joi.extend(spdx);
 
 describe("joi-extension-spdx", function () {
   describe("valid", function () {

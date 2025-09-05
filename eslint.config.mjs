@@ -14,7 +14,7 @@ const config = [
       prettier: prettierPlugin,
     },
     languageOptions: {
-      ecmaVersion: 2021,
+      ecmaVersion: "latest",
       sourceType: "module",
       globals: {
         mocha: true,
