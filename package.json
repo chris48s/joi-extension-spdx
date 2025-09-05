@@ -1,6 +1,6 @@
 {
   "name": "joi-extension-spdx",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "SPDX License IDs plugin for Joi",
   "type": "module",
   "exports": "./src/index.js",
