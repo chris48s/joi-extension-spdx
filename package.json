@@ -1,8 +1,9 @@
 {
   "name": "joi-extension-spdx",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "SPDX License IDs plugin for Joi",
-  "main": "src/index.js",
+  "type": "module",
+  "exports": "./src/index.js",
   "scripts": {
     "test": "mocha \"src/**/*.spec.js\"",
     "lint": "eslint \"src/**/*.js\"",
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/chris48s/joi-extension-spdx#readme",
   "engines": {
-    "node": ">=18"
+    "node": ">=20.10.0"
   },
   "peerDependencies": {
     "joi": ">=17.2.0"
@@ -33,7 +34,7 @@
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-mocha": "11.1.0",
     "eslint-plugin-prettier": "5.5.4",
-    "joi": "17.13.3",
+    "joi": "18.0.1",
     "mocha": "11.7.1",
     "prettier": "3.6.2"
   },
