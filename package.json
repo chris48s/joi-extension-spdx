@@ -5,7 +5,7 @@
   "type": "module",
   "exports": "./src/index.js",
   "scripts": {
-    "test": "mocha \"src/**/*.spec.js\"",
+    "test": "node --test --experimental-test-coverage",
     "lint": "eslint \"src/**/*.js\"",
     "prettier": "prettier --write \"**/*.{mjs,js}\"",
     "prettier:check": "prettier --check \"**/*.{mjs,js}\""
@@ -33,11 +33,10 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.0.2",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-mocha": "11.2.0",
+    "eslint-plugin-node-core-test": "^0.2.1",
     "eslint-plugin-prettier": "5.5.5",
     "globals": "^17.4.0",
     "joi": "18.0.2",
-    "mocha": "11.7.5",
     "prettier": "3.8.1"
   },
   "files": [

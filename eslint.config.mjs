@@ -1,17 +1,17 @@
 import globals from "globals";
 import js from "@eslint/js";
+import nodeCoreTestPlugin from "eslint-plugin-node-core-test";
 import prettierConfig from "eslint-config-prettier";
 import prettierPlugin from "eslint-plugin-prettier";
-import mochaPlugin from "eslint-plugin-mocha";
 
 const config = [
   js.configs.recommended,
-  mochaPlugin.configs.recommended,
   prettierConfig,
+  nodeCoreTestPlugin.configs.recommended,
   {
     plugins: {
-      mocha: mochaPlugin,
       prettier: prettierPlugin,
+      "node-core-test": nodeCoreTestPlugin,
     },
     languageOptions: {
       ecmaVersion: "latest",
@@ -23,8 +23,9 @@ const config = [
     },
     rules: {
       "prettier/prettier": ["error"],
-      "mocha/no-pending-tests": ["error"],
-      "mocha/no-exclusive-tests": ["error"],
+      "node-core-test/no-exclusive-tests": ["error"],
+      "node-core-test/no-incomplete-tests": ["error"],
+      "node-core-test/no-skipped-tests": ["error"],
     },
   },
 ];
